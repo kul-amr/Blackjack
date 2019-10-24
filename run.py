@@ -1,11 +1,13 @@
-from blackjack_run import start
+from blackjack import *
 
 
 def run():
 
     num_players = int(input("Enter number of players : "))
 
-    start(num_players)
+    blackjack = Blackjack(num_players)
 
+    blackjack.start_game()
+    blackjack.get_results()
 
 run()

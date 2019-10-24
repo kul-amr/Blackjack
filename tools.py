@@ -9,3 +9,8 @@ def get_card_val(card):
         return 11
     else:
         return 10
+
+
+def format_card(card):
+
+    return ' - '.join(str(x) for x in card.values())
